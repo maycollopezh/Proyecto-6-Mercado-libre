@@ -10,7 +10,9 @@ const ItemsComponent = () => {
     const requestItems = async() => {
         try {
             
-            const response = await axios.get (`${API_URL}/items`);
+            // const response = await axios.get (`${API_URL}/items`);
+
+            const response = await axios.get (`https://json-server-jwt-gin5.onrender.com/items`);
 
             setItemsInfo(response.data);
 
