@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ItemsComponent from './components/ItemsComponent'
+import React from 'react';
+import Header from './components/Header';
+import ItemsComponent from './components/ItemsComponent';
 
 function App() {
-
   return (
-    <>
-      <ItemsComponent></ItemsComponent>
-    </>
-  )
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <div className="flex-grow">
+        {/* Otros componentes pueden ir aquí */}
+        <ItemsComponent />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
